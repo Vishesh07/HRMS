@@ -1,0 +1,24 @@
+<ion-view view-title="Events">
+  <ion-content>
+	<div class="list card">
+		<div align="center" class="padding item">
+		  <div class=" item item-image">
+ 	   		<img src="img/ionic.png" >
+ 		  </div>
+  		</div>
+		<div class="item">
+		  <label class="item-input padding1">
+    			<textarea ng-model="comments" placeholder="Comments" ng-minlength="3"></textarea>
+ 		  </label>
+		</div>
+		<div class="item">
+		  <button ng-disabled="!comments"class="button button-block button-dark ">
+    			WISH  
+		  </button>
+		  <button ui-sref="applyforleave" class="button button-block button-dark ">
+    			CANCEL  
+		  </button>
+		</div>   
+	</div>
+  </ion-content>
+</ion-view>

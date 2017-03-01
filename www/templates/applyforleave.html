@@ -1,0 +1,54 @@
+<ion-view view-title="Apply For Leave">
+  <ion-content>
+
+<div class="list">
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Name</span>
+    <input type="text" placeholder="Name" ng-model="name">
+  </label>
+
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Date</span>
+    <input type="text" ng-model="data.date">
+  </label>
+  <label  class="item item-input item-select padding2">
+    <div class="input-label" ng-model="leave">
+      Leave Type
+    </div>
+    <select>
+      <option>Half Day Leave</option>
+      <option>Duty Leave</option>
+      <option>Sick Leave</option>
+      <option>Casual Leave</option>
+      <option>Leave Without Pay</option>
+      <option>Maternity / Paternity Leave</option>
+    </select>
+  </label>
+  <label class="item item-input padding2" >
+    From<input type="date" ng-model="from">
+  </label>
+   <label class="item item-input padding2" >
+    To<input type="date" ng-model="to">
+  </label>
+ 
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Reason</span>
+    <input type="text"  placeholder="Reason" ng-minlength="3" ng-model="reason"></textarea>
+  </label>
+  <label>
+    <button ng-disabled="!name ||  !reason"class="button button-block button-dark ">
+  	APPLY  
+    </button>
+  </label>
+  <label>
+    <button class="button button-block button-dark ">
+	CANCEL  
+    </button>
+  </label>
+</div>
+
+
+
+    
+  </ion-content>
+</ion-view>
